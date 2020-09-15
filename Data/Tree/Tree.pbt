@@ -46,13 +46,13 @@ Objects {
   ChildIds: 7956499957891432828
   ChildIds: 12420767391414841582
   ChildIds: 13466996306791132421
-  ChildIds: 136094151637563514
   ChildIds: 15746576117830592871
   ChildIds: 17162308982062307715
   ChildIds: 6123006864602539436
   ChildIds: 10389604403565466139
   ChildIds: 8667653403614020617
   ChildIds: 17743799672547271473
+  ChildIds: 8217626451108726665
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -65,12 +65,44 @@ Objects {
   }
 }
 Objects {
+  Id: 8217626451108726665
+  Name: "Terrain"
+  Transform {
+    Location {
+      Z: 300
+    }
+    Rotation {
+      Yaw: -84.9995117
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Terrain {
+    Material {
+      Id: 9084077516142855161
+    }
+    VoxelSize: 50
+    OctreeDepth: 5
+    GeneratorID: "DEPRECATED"
+  }
+}
+Objects {
   Id: 17743799672547271473
   Name: "Bush 01"
   Transform {
     Location {
       X: -700
-      Y: -950
+      Y: -1150
       Z: 300
     }
     Rotation {
@@ -133,7 +165,7 @@ Objects {
   Transform {
     Location {
       X: -850
-      Y: -750
+      Y: -950
       Z: 300
     }
     Rotation {
@@ -190,7 +222,7 @@ Objects {
   Transform {
     Location {
       X: -600
-      Y: -50
+      Y: -250
       Z: 300
     }
     Rotation {
@@ -247,7 +279,7 @@ Objects {
   Transform {
     Location {
       X: 700
-      Y: -50
+      Y: -250
       Z: 300
     }
     Rotation {
@@ -304,7 +336,7 @@ Objects {
   Transform {
     Location {
       X: 950
-      Y: -750
+      Y: -950
       Z: 300
     }
     Rotation {
@@ -361,7 +393,7 @@ Objects {
   Transform {
     Location {
       X: 1100
-      Y: -950
+      Y: -1150
       Z: 300
     }
     Rotation {
@@ -419,52 +451,19 @@ Objects {
   }
 }
 Objects {
-  Id: 136094151637563514
-  Name: "Terrain"
-  Transform {
-    Location {
-      Z: -100
-    }
-    Rotation {
-      Yaw: 70.0000763
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Terrain {
-    Material {
-      Id: 9084077516142855161
-    }
-    VoxelSize: 20
-    OctreeDepth: 5
-    GeneratorID: "DEPRECATED"
-  }
-}
-Objects {
   Id: 13466996306791132421
   Name: "Swirling Dust VFX"
   Transform {
     Location {
-      X: 400
+      X: 50
       Y: 1150
-      Z: 400
     }
     Rotation {
       Yaw: -174.999771
     }
     Scale {
-      X: 6.5
-      Y: 30.5000019
+      X: 8.25
+      Y: 43.5
       Z: 12.75
     }
   }
@@ -473,8 +472,8 @@ Objects {
     Overrides {
       Name: "bp:color"
       Color {
-        G: 0.0346666649
-        B: 0.546
+        R: 0.0437776186
+        B: 0.394000053
         A: 1
       }
     }
@@ -517,14 +516,14 @@ Objects {
   Name: "Swirling Dust VFX"
   Transform {
     Location {
-      X: 450
+      X: 100
       Y: 1400
-      Z: 1300
+      Z: 1050
     }
     Rotation {
     }
     Scale {
-      X: 15.25
+      X: 13.000001
       Y: 0.75
       Z: 10.75
     }
@@ -534,8 +533,8 @@ Objects {
     Overrides {
       Name: "bp:color"
       Color {
-        R: 0.178000033
-        G: 0.321524084
+        R: 0.186000049
+        G: 0.211841404
         B: 1
         A: 1
       }
@@ -579,14 +578,13 @@ Objects {
   Name: "Swirling Dust VFX"
   Transform {
     Location {
-      X: 250
-      Y: 1200
-      Z: 2250
+      Y: 1950
+      Z: 1600
     }
     Rotation {
     }
     Scale {
-      X: 9.25000191
+      X: 10.25
       Y: 1
       Z: 4.75
     }
@@ -1984,7 +1982,7 @@ Objects {
   Settings {
     IsDefault: true
     PlayerMovementSettings {
-      WalkSpeed: 300
+      WalkSpeed: 640
       MaxAcceleration: 1800
       WalkableFloorAngle: 44
       JumpMaxCount: 1
