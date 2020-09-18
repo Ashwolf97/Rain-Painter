@@ -1,4 +1,22 @@
 ﻿Assets {
+  Id: 15263370792480905247
+  Name: "Birch Leaves 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_leaves_birch_001"
+  }
+}
+Assets {
+  Id: 14910800075207652025
+  Name: "Bush 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bush_generic_002"
+  }
+}
+Assets {
   Id: 13631687888471262490
   Name: "Fog Adjustment Volume"
   PlatformAssetType: 20
@@ -8,21 +26,21 @@
   }
 }
 Assets {
-  Id: 13130357790217864690
-  Name: "Hay 02"
-  PlatformAssetType: 2
+  Id: 13472998653308625653
+  Name: "Swirling Dust VFX"
+  PlatformAssetType: 8
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_fan_hay_002_uv"
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_swirling_dust"
   }
 }
 Assets {
-  Id: 12095835209017042614
-  Name: "Cube"
+  Id: 12903907279094703293
+  Name: "Bush 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_002"
+    AssetId: "sm_bush_generic_001"
   }
 }
 Assets {
@@ -32,6 +50,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_volumetric_fog_injector"
+  }
+}
+Assets {
+  Id: 9084077516142855161
+  Name: "Dirt 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "dirt_001"
   }
 }
 Assets {
